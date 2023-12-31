@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meta Share</title>
+</head>
+<body>
+    <!-- Welcome Popup -->
+    <div class="popup">
+        <p>Welcome to Meta Share, Share Your Day</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <img src="https://www.flickr.com/photos/199805833@N04/shares/L29kxoD2Y3" alt="Share Your Day">
+
+        <button id="see-more-btn">See More</button>
+    </div>
+
+    <!-- Form Page -->
+    <div class="form-page" id="formPage">
+        <form id="infoForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <button type="submit" id="goBtn" class="inactive">Go</button>
+        </form>
+    </div>
+
+    <!-- Wait Popup -->
+    <div class="popup" id="waitPopup">
+        <p>Wait...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
