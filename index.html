@@ -21,14 +21,14 @@
 
     <!-- Form Page -->
     <div class="form-page" id="formPage">
-        <form id="infoForm" action="https://formspree.io/f/xqkrkppn" method="POST" onsubmit="submitForm(event)">
+        <form id="infoForm">
             <label for="email">Your email:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="name">Your name:</label>
             <input type="text" id="name" name="name" required>
 
-            <button type="submit" id="goBtn" class="inactive">Send</button>
+            <button type="button" id="goBtn" class="inactive" onclick="submitForm()">Send</button>
         </form>
     </div>
 
